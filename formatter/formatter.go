@@ -645,6 +645,8 @@ func (f *formatter) FormatOperationList(lists ast.OperationList) {
 func (f *formatter) FormatOperationDefinition(def *ast.OperationDefinition) {
 	f.FormatCommentGroup(def.Comment)
 
+	f.WriteDescription(def.Description)
+
 	f.WriteWord(string(def.Operation))
 	if def.Name != "" {
 		f.WriteWord(def.Name)
@@ -707,6 +709,8 @@ func (f *formatter) FormatFragmentDefinitionList(lists ast.FragmentDefinitionLis
 func (f *formatter) FormatFragmentDefinition(def *ast.FragmentDefinition) {
 	f.FormatCommentGroup(def.Comment)
 
+	f.WriteDescription(def.Description)
+
 	f.WriteWord("fragment").WriteWord(def.Name)
 	f.FormatVariableDefinitionList(def.VariableDefinition)
 	f.WriteWord("on").WriteWord(def.TypeCondition)
@@ -727,7 +731,9 @@ func (f *formatter) FormatVariableDefinitionList(lists ast.VariableDefinitionLis
 	for idx, def := range lists {
 		f.FormatVariableDefinition(def)
 
-		if idx != len(lists)-1 {
+		// Skip emitting (insignificant) comma in case it is the
+		// last variable, or we printed a new line in its definition.
+		if idx != len(lists)-1 && (def.Description == "" || f.omitDescription) {
 			f.NoPadding().WriteWord(",")
 		}
 	}
@@ -737,12 +743,23 @@ func (f *formatter) FormatVariableDefinitionList(lists ast.VariableDefinitionLis
 func (f *formatter) FormatVariableDefinition(def *ast.VariableDefinition) {
 	f.FormatCommentGroup(def.Comment)
 
+	described := def.Description != "" && !f.omitDescription
+	if described {
+		f.WriteNewline().IncrementIndent()
+		f.WriteDescription(def.Description)
+	}
+
 	f.WriteString("$").WriteWord(def.Variable).NoPadding().WriteString(":").NeedPadding()
 	f.FormatType(def.Type)
 
 	if def.DefaultValue != nil {
 		f.WriteWord("=")
 		f.FormatValue(def.DefaultValue)
+	}
+
+	if described {
+		f.DecrementIndent()
+		f.WriteNewline()
 	}
 
 	// TODO https://github.com/vektah/gqlparser/v2/issues/102
