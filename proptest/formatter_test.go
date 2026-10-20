@@ -6,9 +6,9 @@ import (
 
 	"pgregory.net/rapid"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/formatter"
-	"github.com/vektah/gqlparser/v2/parser"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/formatter"
+	"github.com/dokimasia/gqlparser/v2/parser"
 )
 
 // TestFormatQueryDocumentIsStable checks that formatting reaches a fixed point: parsing

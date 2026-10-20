@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 // Both error types report their own attributes through the same method gqlgen's errors

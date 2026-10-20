@@ -3,7 +3,7 @@ package validator
 import (
 	"fmt"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 var _ error = (*EmptyDefinitionError)(nil)

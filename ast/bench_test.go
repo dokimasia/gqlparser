@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 // BenchmarkFieldListForName measures the lookup the validator performs for every field of

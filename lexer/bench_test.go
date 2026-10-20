@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/lexer"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/lexer"
 )
 
 // BenchmarkReadToken measures tokenising alone, which every other path pays for before it

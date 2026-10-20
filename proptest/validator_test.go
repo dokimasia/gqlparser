@@ -6,11 +6,11 @@ import (
 
 	"pgregory.net/rapid"
 
-	"github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/parser"
-	"github.com/vektah/gqlparser/v2/validator"
-	"github.com/vektah/gqlparser/v2/validator/rules"
+	"github.com/dokimasia/gqlparser/v2"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/parser"
+	"github.com/dokimasia/gqlparser/v2/validator"
+	"github.com/dokimasia/gqlparser/v2/validator/rules"
 )
 
 // TestValidationIsDeterministic checks that one source text validated twice, parsed afresh

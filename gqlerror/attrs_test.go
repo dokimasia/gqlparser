@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 // attrErr is a cause that carries slog attributes of its own, in the shape of gqlgen's

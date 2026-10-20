@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 //nolint:staticcheck // We do not care about capitalized error strings

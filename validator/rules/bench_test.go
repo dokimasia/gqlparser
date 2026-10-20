@@ -7,12 +7,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/parser"
-	"github.com/vektah/gqlparser/v2/validator"
-	"github.com/vektah/gqlparser/v2/validator/core"
-	"github.com/vektah/gqlparser/v2/validator/rules"
+	"github.com/dokimasia/gqlparser/v2"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/parser"
+	"github.com/dokimasia/gqlparser/v2/validator"
+	"github.com/dokimasia/gqlparser/v2/validator/core"
+	"github.com/dokimasia/gqlparser/v2/validator/rules"
 )
 
 // BenchmarkRule measures one rule at a time against the introspection query.

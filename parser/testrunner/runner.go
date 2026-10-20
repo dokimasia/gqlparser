@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.yaml.in/yaml/v3"
 
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 type Features map[string][]Spec

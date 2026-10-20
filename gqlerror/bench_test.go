@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 // The validator builds one error per violation, and a server formats, converts and matches each

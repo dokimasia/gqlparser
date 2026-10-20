@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/validator/rules"
+	"github.com/dokimasia/gqlparser/v2"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/validator/rules"
 )
 
 // BenchmarkLoadSchema measures the cost a server pays once at startup: parse the SDL, then

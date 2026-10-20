@@ -5,8 +5,8 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 // nullError stands in for a cause that reports into the "gql" group, as gqlgen's

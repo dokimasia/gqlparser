@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/lexer"
-	"github.com/vektah/gqlparser/v2/parser/testrunner"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/lexer"
+	"github.com/dokimasia/gqlparser/v2/parser/testrunner"
 )
 
 func TestLexer(t *testing.T) {

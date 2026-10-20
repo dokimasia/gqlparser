@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 // Error is the standard graphql error type described in https://spec.graphql.org/draft/#sec-Errors

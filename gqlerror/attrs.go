@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"slices"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 // Attrs reports the error's own fields as a single slog group named "gql": message, path,

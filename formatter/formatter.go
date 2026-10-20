@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/ast"
 )
 
 type Formatter interface {

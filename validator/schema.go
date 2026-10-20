@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	. "github.com/vektah/gqlparser/v2/ast" //nolint:staticcheck // bad, yeah
-	"github.com/vektah/gqlparser/v2/gqlerror"
-	"github.com/vektah/gqlparser/v2/parser"
+	. "github.com/dokimasia/gqlparser/v2/ast" //nolint:staticcheck // bad, yeah
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/parser"
 )
 
 func LoadSchema(inputs ...*Source) (*Schema, error) {

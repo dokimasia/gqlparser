@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/gqlerror"
 )
 
 type sourceCapture struct {

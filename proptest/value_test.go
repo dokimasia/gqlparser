@@ -5,8 +5,8 @@ import (
 
 	"pgregory.net/rapid"
 
-	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/vektah/gqlparser/v2/parser"
+	"github.com/dokimasia/gqlparser/v2/ast"
+	"github.com/dokimasia/gqlparser/v2/parser"
 )
 
 // TestStringValueRoundTrips checks that printing a string value and parsing the result

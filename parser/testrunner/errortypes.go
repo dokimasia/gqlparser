@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/vektah/gqlparser/v2/validator"
+	"github.com/dokimasia/gqlparser/v2/validator"
 )
 
 // this registry is used to build
